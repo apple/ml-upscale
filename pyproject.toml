@@ -1,0 +1,48 @@
+#
+# For licensing see accompanying LICENSE file.
+# Copyright (C) 2023 Apple Inc. All Rights Reserved.
+#
+
+[project]
+name = "apple-upscale"  # Required
+version = "0.1.0"  # Required
+description = "Export utility for unconstrained channel pruned models"  # Optional
+readme = "README.md" # Optional
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["pruning", "export", "unconstrained pruning"]  # Optional
+authors = [
+  {name = "Alvin Wan", email = "alvinwan@apple.com" } # Optional
+]
+classifiers = [  # Optional
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: Apple Public Source License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [ # Optional
+  "seaborn==0.12.1",
+  "torch==2.0.1",
+  "torchvision==0.15.2",
+  "yacs==0.1.8",
+  "ninja==1.10.2.3",
+]
+
+[project.optional-dependencies] # Optional
+test = ["pytest==7.3.2"]
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/apple/ml-upscale"
+"Bug Reports" = "https://github.com/apple/ml-upscale/issues"
+"Source" = "https://github.com/apple/ml-upscale"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
