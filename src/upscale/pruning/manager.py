@@ -105,6 +105,7 @@ class PruningManager(nn.Module):
                 pruned_inputs, pruned_outputs = get_mask_indices(traced.tensor_to_metadata)
             self.spec = generate_pruning_spec(
                 traced, pruned_outputs, pruned_inputs, net=self.net, **kwargs)
+        return self
 
     def get_mock_model(self):
         """
@@ -128,4 +129,5 @@ class PruningManager(nn.Module):
         """
         prune_model(self.spec, is_not_ane=is_not_ane, baseline=baseline)
         self.spec = None  # NOTE: clear pruning params, which are now invalid
+        return self
 

@@ -16,7 +16,7 @@ pip install apple-upscale
 Mask and prune channels, using the default magnitude pruner.
 
 ```python
-import torchvision
+import torch, torchvision
 from upscale import MaskingManager, PruningManager
 
 x = torch.rand((1, 3, 224, 224)).cuda()
