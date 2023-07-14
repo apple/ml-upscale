@@ -151,6 +151,7 @@ class HRank(Importance):
                 logging.debug(f"Loaded precomputed rank for {module._name})")
 
         model._handles = []
+        model._name = ''
         is_hook_registered = False
         for name, module in model.named_modules():
             if isinstance(module, nn.Conv2d):

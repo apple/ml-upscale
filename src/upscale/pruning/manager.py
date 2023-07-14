@@ -32,7 +32,7 @@ class PruningManager(nn.Module):
 
     >>> manager = PruningManager(net)
     >>> pruned_inputs = [('layer1.1.conv1.weight', 5)]
-    >>> manager.compute([x], pruned_inputs=pruned_inputs)
+    >>> _ = manager.compute([x], pruned_inputs=pruned_inputs)
 
     Then, during training, you can use the mock-pruned model. This mock-pruned
     model applies masks instead of modifying the model itself.
@@ -43,7 +43,7 @@ class PruningManager(nn.Module):
     Finally, actually prune the model. Then run inference using the *original
     (now modified, in place) model.
 
-    >>> manager.prune()
+    >>> _ = manager.prune()
     >>> y_pruned = net(x)
 
     Check that both the mocked and pruned outputs match.

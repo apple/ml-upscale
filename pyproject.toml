@@ -5,7 +5,7 @@
 
 [project]
 name = "apple-upscale"  # Required
-version = "0.1.0"  # Required
+version = "0.1.1"  # Required
 description = "Export utility for unconstrained channel pruned models"  # Optional
 readme = "README.md" # Optional
 requires-python = ">=3.7"
