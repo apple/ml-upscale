@@ -1,5 +1,8 @@
 # Unconstrained Channel Pruning · [Paper](https://openreview.net/forum?id=25fe54GXLo)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1vTZBWB3O2oj-g8oH5sj7j4CJ_xe6mv1p?usp=sharing)
+
+
 **UPSCALE: Unconstrained Channel Pruning** @ [ICML 2023](https://openreview.net/forum?id=25fe54GXLo)<br/>
 [Alvin Wan](https://alvinwan.com), [Hanxiang Hao](https://scholar.google.com/citations?user=IMn1m2sAAAAJ&hl=en&oi=ao), [Kaushik Patnaik](https://openreview.net/profile?id=~Kaushik_Patnaik1), [Yueyang Xu](https://github.com/inSam), [Omer Hadad](https://scholar.google.com/citations?user=cHZBEjQAAAAJ&hl=en), [David Güera](https://davidguera.com), [Zhile Ren](https://jrenzhile.com), [Qi Shan](https://scholar.google.com/citations?user=0FbnKXwAAAAJ&hl=en)
 
